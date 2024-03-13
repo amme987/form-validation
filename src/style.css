@@ -1,0 +1,21 @@
+form {
+  display: grid;
+  grid-template-columns: min-content;
+  gap: 10px;
+}
+
+input {
+  outline: none;
+}
+
+input:invalid {
+  border: 1px dashed red;
+}
+
+.error {
+  background-color: red;
+}
+
+input:valid {
+  border: 1px solid black;
+}
