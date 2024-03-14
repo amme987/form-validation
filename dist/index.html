@@ -10,24 +10,38 @@
     <form novalidate>
       <label for="email"
         >Email
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" required />
         <span class="error"></span>
       </label>
       <label for="country"
         >Country
-        <input type="text" name="country" id="country" />
+        <input
+          type="text"
+          name="country"
+          id="country"
+          required
+          pattern="[A-Za-z ]{3,56}"
+        />
+        <span class="error"></span>
       </label>
       <label for="zipcode"
-        >Zipcode
-        <input type="tel" name="zipcode" id="zipcode" />
+        >Zipcode <input type="tel" name="zipcode" id="zipcode" required />
+        <span class="error"></span>
       </label>
       <label for="password"
         >Password
-        <input type="password" name="password" id="password" />
+        <input type="password" name="password" id="password" required />
+        <span class="error"></span>
       </label>
       <label for="confirmation"
         >Confirm password
-        <input type="confirmation" name="confirmation" id="confirmation" />
+        <input
+          type="confirmation"
+          name="confirmation"
+          id="confirmation"
+          required
+        />
+        <span class="error"></span>
       </label>
       <button>Submit</button>
     </form>
