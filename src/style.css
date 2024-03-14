@@ -15,7 +15,3 @@ input:invalid {
 .error {
   background-color: red;
 }
-
-input:valid {
-  border: 1px solid black;
-}

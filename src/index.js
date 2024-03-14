@@ -8,8 +8,11 @@ const emailError = document.querySelector('#email + .error');
 const country = document.getElementById('country');
 const countryError = document.querySelector('#country + .error');
 const zipcode = document.getElementById('zipcode');
+const zipcodeError = document.querySelector('#zipcode + .error');
 const password = document.getElementById('password');
+const passwordError = document.querySelector('#password + .error');
 const confirmation = document.getElementById('confirmation');
+const confirmationError = document.querySelector('#confirmation + .error');
 
 inputs.forEach(input =>
   input.addEventListener('input', () => {
@@ -41,5 +44,11 @@ function showError() {
   }
   if (country.validity.patternMismatch) {
     countryError.textContent = 'Entered value must be a country name';
+  }
+  if (zipcode.validity.patternMismatch) {
+    zipcodeError.textContent = 'Please enter a 5-digit zipcode';
+  }
+  if (password.validity.patternMismatch) {
+    passwordError.textContent = 'Password needs to be 13-16 characters long';
   }
 }

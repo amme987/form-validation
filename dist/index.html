@@ -19,18 +19,31 @@
           type="text"
           name="country"
           id="country"
-          required
           pattern="[A-Za-z ]{3,56}"
+          required
         />
         <span class="error"></span>
       </label>
       <label for="zipcode"
-        >Zipcode <input type="tel" name="zipcode" id="zipcode" required />
+        >Zipcode
+        <input
+          type="tel"
+          name="zipcode"
+          id="zipcode"
+          pattern="[0-9]{5}"
+          required
+        />
         <span class="error"></span>
       </label>
       <label for="password"
         >Password
-        <input type="password" name="password" id="password" required />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          pattern="\S{13,16}"
+          required
+        />
         <span class="error"></span>
       </label>
       <label for="confirmation"
