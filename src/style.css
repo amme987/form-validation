@@ -1,3 +1,7 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 form {
   display: grid;
   grid-template-columns: min-content;
@@ -8,10 +12,11 @@ input {
   outline: none;
 }
 
-input:invalid {
+input:invalid,
+.invalid {
   border: 1px dashed red;
 }
 
 .error {
-  background-color: red;
+  color: red;
 }
